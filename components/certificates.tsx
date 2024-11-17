@@ -38,7 +38,7 @@ export default function Certificates() {
   return (
     <div id='certifications'>
         <SparklesText  className=" text-center" text="Unveiling My Mastery: A Showcase of Certifications"  />
-        <div  className="w-full grid grid-cols-3 md:grid-cols-2">
+        <div  className="w-full grid grid-cols-3 md:grid-cols-2 max-sm:grid-cols-1">
         {
             certificates.map((certificate, index) => (
                 <>
