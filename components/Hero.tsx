@@ -3,8 +3,26 @@ import { FaLocationArrow } from "react-icons/fa6";
 import MagicButton from "./MagicButton";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
+import { useEffect } from "react";
 
 const Hero = () => {
+  useEffect(() => {
+    const handleHashChange = () => {
+      const yOffset = -80; // Adjust this value based on your navbar height
+      const element = document.getElementById(window.location.hash.substring(1));
+      if (element) {
+        const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+        window.scrollTo({ top: y, behavior: 'smooth' });
+      }
+    };
+
+    window.addEventListener('hashchange', handleHashChange);
+
+    return () => {
+      window.removeEventListener('hashchange', handleHashChange);
+    };
+  }, []);
+
   return (
     <div className="pb-20 pt-36">
       {/**

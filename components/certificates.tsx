@@ -11,28 +11,34 @@ export default function Certificates() {
 
   const certificates = [
     {
-      name: "React Basic Certificate",
-      desc: "Certificate demonstrating proficiency in React fundamentals and core concepts.",
-      img: '/certificates/react.jpg',
-      provider:'hackerrank',
+      name: "Front End Development (React)",
+      desc: "Demonstrates expertise in creating modern web applications using React.",
+      img: "/certificates/frontend.jpg",
+      provider: "hackerrank"
     },
     {
-      name: 'Responsive Web Design',
-      desc: 'Certificate showcasing skills in crafting responsive and adaptive web layouts.',
-      img: '/certificates/freecodecamp.jpg',
-      provider:'freecodecamp'
+      name: "React Fundamentals",
+      desc: "Verifies proficiency in the core concepts and best practices of React.",
+      img: "/certificates/react.jpg",
+      provider: "hackerrank"
     },
     {
-      name: 'SQL Basic Certificate',
-      desc: 'Certificate indicating understanding of SQL basics and database management.',
-      img: '/certificates/sql.jpg',
-      provider:'hackerrank'
+      name: "Responsive Web Design",
+      desc: "Showcases skills in crafting responsive and adaptive web layouts.",
+      img: "/certificates/freecodecamp.jpg",
+      provider: "freecodecamp"
     },
     {
-      name: 'Gemini In Google Drive',
-      desc: 'Certificate for expertise in utilizing Gemini with Google Drive integrations.',
-      img: '/certificates/google.jpg',
-      provider:'google'
+      name: "SQL Fundamentals",
+      desc: "Indicates understanding of database management and SQL basics.",
+      img: "/certificates/sql.jpg",
+      provider: "hackerrank"
+    },
+    {
+      name: "Gemini Integration with Google Drive",
+      desc: "Recognizes expertise in utilizing Gemini with Google Drive integrations.",
+      img: "/certificates/google.jpg",
+      provider: "google"
     }
   ];
   return (
