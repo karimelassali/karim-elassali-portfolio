@@ -1,4 +1,7 @@
+
 "use client";
+
+
 
 import { navItems } from "@/data";
 
@@ -11,6 +14,8 @@ import RecentProjects from "@/components/RecentProjects";
 import Certificates from "@/components/certificates";
 import Skills from "@/components/skills";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
+
+
 
 const Home = () => {
   return (
