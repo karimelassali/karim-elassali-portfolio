@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://elassali.netlify.app/sitemap.xml
